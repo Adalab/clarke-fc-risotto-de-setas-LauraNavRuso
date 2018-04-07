@@ -1,3 +1,88 @@
-body {
-  background-color: red;
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  background-color: #1F01B9;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.ingredients-list {
+  padding: 20px 200px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px grey;
+}
+
+.list-item:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.quantity--number {
+  border: solid 1px grey;
+  width: 30px;
+  height: 30px;
+  color: #1481BA;
+  text-align: center;
+}
+
+.list-item--product-name {
+  font-weight: bold;
+}
+
+.list-item--cost {
+  color: green;
+  font-weight: bold;
+  padding-left: 200px;
+}
+
+.list-item--cost:after{
+  content: '€';
+}
+
+
+
+
+
+.purchase-finish {
+  padding: 0 350px;
+}
+
+.purchase-finish--subtotal-container,
+.purchase-finish--shipping-cost-container,
+.purchase-finish--total-container
+ {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchase-finish--total-container {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.purchase-finish--total-amount-number {
+  color: green;
+  font-size: 20px;
+}
+
+.purchase-finish--button {
+  display: block;
+  text-align: center;
+  background-color: green;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
 }
